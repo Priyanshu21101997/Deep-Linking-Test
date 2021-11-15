@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        // Implicit intent
-//        button.setOnClickListener{
-//            val sendIntent = Intent("com.example.SecondActivity");
-//            startActivity(sendIntent)
-//        }
+         //Implicit intent
+        button.setOnClickListener{
+            val viewIntent = Intent(Intent.ACTION_VIEW)
+            startActivity(viewIntent)
+        }
     }
 
 
