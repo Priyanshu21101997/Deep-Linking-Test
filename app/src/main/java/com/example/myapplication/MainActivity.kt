@@ -5,28 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.fragment.app.FragmentManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<Button>(R.id.helloworld)
+        val firstFragment = FirstFragment()
+        val fm: FragmentManager = supportFragmentManager
+        fm.beginTransaction().add(R.id.mainLayout,firstFragment).commit()
 
-        // Explicit intent
-//        button.setOnClickListener {
-//            val intent = Intent(this, SecondActivity::class.java)
-//            startActivity(intent)
-//        }
 
-         //Implicit intent
-        button.setOnClickListener{
-            val viewIntent = Intent(Intent.ACTION_VIEW)
-            startActivity(viewIntent)
-        }
+
+
+
+
     }
-
-
 }
