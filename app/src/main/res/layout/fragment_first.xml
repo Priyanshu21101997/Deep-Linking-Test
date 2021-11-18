@@ -8,11 +8,21 @@
     <!-- TODO: Update blank fragment layout -->
     <ImageButton
         android:id="@+id/imageBtn1"
-        android:tag="imageButton1"
+        android:layout_width="104dp"
 
-        android:layout_width="184dp"
-        android:layout_height="124dp"
-        android:layout_marginLeft="100dp"
-        android:src="@android:drawable/btn_plus" />
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:src="@android:drawable/btn_plus"
+        android:tag="imageButton1" />
+
+    <ImageButton
+        android:id="@+id/imageBtn2"
+        android:layout_width="104dp"
+
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:src="@android:drawable/btn_star_big_on"
+        android:tag="imageButton2" />
 
 </FrameLayout>
